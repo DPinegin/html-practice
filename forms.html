@@ -18,20 +18,92 @@
    <form name="travel-suggestions" id="travel" method="get">
     <!--This is a text input. type= "text", name, and id are all required attributes.
     Th erequired attributes are only necessary when you want to make sure the user
-    has to fill teh input before submitting the form.
-    All inputs need a label with the for attribute that links the label to the
+    has to fill the input before submitting the form.
+    
+    The type attribute defines the type of input.
+    The name attribute defines the variable name that would be used for
+    the input when data gets passed to the server (requires back-end scrpting,which is beyond teh scope of this course)
+
+    All inputs need a label woth the for attribute that links label to the input using the input's id attribute.
+    When an input is required, it is important to include the word required in the label's text. 
     input using the input's id attribute.
     When an input is required, it i simportant to include the word required in the label's text.-->
         <label for="travel-location">please enter the city or country you suggest I travel to [required]:</label>
         <input type="text" name="destination" id="travel-location" required />
 <br />
 <br />
+<!--
+    This is an email input. It requires a type, name and id.
+
+    Optional attribute are minlength (to define the minimal length enetered by the user),
+    and maxlength(to define the maximum length entered.)
+-->
+<label for="email-address">Please enter E-Mail address here [required]:</label>
+<input type="email" name="email" id="email-address" minlength="6" maxlength="40"/>
+<br />
+<br />
 <!--This is a password input. type = "password", name, and id are all required attributes.
-As always, each input needs a label with the for attribute tolink the label to an input. -->
+As always, each input needs a label with the for attribute tolink the label to an input. 
+I have comented this input out because I will not be neding a password input for this form.-->
 <!--<label for="password"> Please enetr your password:</label>-->
 <!--<input type="password" name="userPassword" id="password" />-->
-            <label for="password">please Enter your password:</label>
-        <input type="password" name="userPassword" id="password" />
+        <label for="password">please Enter your password:</label>
+        <input type="password" name="userPassword" id="password" minlength="10"/>
+
+<br />
+<br />
+
+<button type="submit" value="Submit">Submit</button>
+<button type="reset" value="Reset">Reset</button>
+
+<input type="checkbox" id="agreement" name="agreement" value="Agreed">
+<label for="agreement">I have agreed to the Terms</label>
+
+<br />
+<br />
+<p>Please select your age range:</p>
+<input type="radio" id="age1" name="age" value="18">
+<label for="age1">0 - 18</label>
+<br />
+<input type="radio" id="age2" name="age" value="19">
+<label for="age1">19 + </label>
+
    </form> 
+
+   <h1>Login-Page</h1>
+   <form action="/storeddata.html"> 
+
+    <label for="email-address">Please enter E-Mail address here [required]:</label>
+    <input type="email" name="email" id="email-address" minlength="6" maxlength="40"/>
+    <br />
+    <br />
+
+    <label for="password">please Enter your password:</label>
+    <input type="password" name="userPassword" id="password" minlength="10"/>
+    <br />
+    <br />
+
+    <p>Please select your age range:</p>
+    <input type="radio" id="age1" name="age" value="18" required>
+    <label for="age1">0 - 18</label>
+    <br />
+    <br />
+
+    <input type="radio" id="age2" name="age" value="19">
+    <label for="age1">19 + </label>
+    <br />
+    <br />
+
+    <input type="checkbox" id="agreement" name="agreement" value="Agreed" required>
+    <label for="agreement">I have agreed to the Terms and Conditions</label>
+    <br />
+    <br />
+
+    <button type="submit" value="Submit">Submit</button>
+    <button type="reset" value="Reset">Reset</button>
+
+
+   </form>
+   
 </body>
 </html>
