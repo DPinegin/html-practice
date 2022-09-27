@@ -42,6 +42,29 @@
 <input type="email" name="email" id="email-address" minlength="6" maxlength="40"/>
 <br />
 <br />
+<fieldset form="travel-suggestion" name="travel-items">
+    <legend>
+        What Items Would You Recommend I Bring to the Country You Are Suggesting:
+    </legend>
+</fieldset>
+
+<br />
+<br />
+<select name="schools" id="schools">
+    <option value="high-school">high-school</option>
+    <option value="college">college</option>
+    <option value="university">university</option>
+</select>
+<br />
+<br />
+
+<label for="comments">Additional Comments</label>
+<textarea id="comments" name="comments" rows="5" cols="33">
+</textarea>
+
+<br />
+<br />
+
 <!--This is a password input. type = "password", name, and id are all required attributes.
 As always, each input needs a label with the for attribute tolink the label to an input. 
 I have comented this input out because I will not be neding a password input for this form.-->
@@ -49,10 +72,8 @@ I have comented this input out because I will not be neding a password input for
 <!--<input type="password" name="userPassword" id="password" />-->
         <label for="password">please Enter your password:</label>
         <input type="password" name="userPassword" id="password" minlength="10"/>
-
 <br />
 <br />
-
 <button type="submit" value="Submit">Submit</button>
 <button type="reset" value="Reset">Reset</button>
 
@@ -68,7 +89,9 @@ I have comented this input out because I will not be neding a password input for
 <input type="radio" id="age2" name="age" value="19">
 <label for="age1">19 + </label>
 
-   </form> 
+   </form>
+   
+   
 
    <h1>Login-Page</h1>
    <form action="/storeddata.html"> 
@@ -104,6 +127,6 @@ I have comented this input out because I will not be neding a password input for
 
 
    </form>
-   
+
 </body>
 </html>
