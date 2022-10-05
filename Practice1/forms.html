@@ -42,6 +42,15 @@
 <input type="email" name="email" id="email-address" minlength="6" maxlength="40"/>
 <br />
 <br />
+
+<!--A fieldset is an are ain your form that are more related to each-other 
+than they are to other inputs in the form (i.e. a list of travel items is more realted to 
+each-other than the country the person is recommending.)
+
+Form is an important attribute to link the fieldset to the form it is related to.
+
+A legend describe show the inputs insid ethe fieldset are all realted.
+-->
 <fieldset form="travel-suggestion" name="travel-items">
     <legend>
         What Items Would You Recommend I Bring to the Country You Are Suggesting:
@@ -50,13 +59,44 @@
 
 <br />
 <br />
-<select name="schools" id="schools">
-    <option value="high-school">high-school</option>
-    <option value="college">college</option>
-    <option value="university">university</option>
+<!--this is a selecet input, which is essentialy a dropdown input.
+
+name and id are the required attributes for a select input.
+
+Select inputs are widely used, but can lead to accessibility issues. If you can
+accomplish the same thing you want with a different type of inputs 
+(i.e. radio buttons, text-basd, etc.), you should use the other
+method of getting this information.)-->
+
+<label for="country">What country is this located in?</label>
+<select name="countrySelect" id="country">
+    <!--outgroups let you group teh options inside your select input.
+    label is required so that th optgroup displays what th category is
+for teh inputs that are inside that group.-->
+<optgroup label="North America">
+    <!--The option tag is teh actual option tht a user can select.
+    It requires the value attribute for when the sleectrion get ssent to the server-->
+    <option value="Canada">Canada</option>
+    <option value="unitedStates">U.S.A.</option>
+    <option value="Mexico">Mexico</option>
+</optgroup>
+<optgroup label="South America">
+    <option value="Brazil">Brazil</option>
+    <option value="Bolivia">Bolivia</option>
+    <option value="Chile">Chile</option>
+</optgroup>
 </select>
 <br />
 <br />
+
+<!-- This is a text-rea input. This allows a user to input multiplt lines of information for a form.
+Name and id are required attributes.
+
+Highly recommended attributes are rows amd cols. 
+Rows defines the number of lines a user can type 
+before a scrollbar apperas. cols defines the 
+number of characters across a user can type 
+before their input goes to the next line.-->
 
 <label for="comments">Additional Comments</label>
 <textarea id="comments" name="comments" rows="5" cols="33">
@@ -77,11 +117,18 @@ I have comented this input out because I will not be neding a password input for
 <button type="submit" value="Submit">Submit</button>
 <button type="reset" value="Reset">Reset</button>
 
-<input type="checkbox" id="agreement" name="agreement" value="Agreed">
+<input type="checkbox" id="agreement" name="agreement" value="agreed">
 <label for="agreement">I have agreed to the Terms</label>
 
 <br />
 <br />
+<!--This si a adio button input, which are good when you want the user to select one option from a list of optuions.
+
+name, id and value are all required attributes. The value shoudl represent
+the choice the user has selected. Note, most importantly, the name attribute
+for each related radio utton shoudl be exactly the same.
+
+This is also an input where the label typically shows up after the input.-->
 <p>Please select your age range:</p>
 <input type="radio" id="age1" name="age" value="18">
 <label for="age1">0 - 18</label>
@@ -115,7 +162,16 @@ I have comented this input out because I will not be neding a password input for
     <label for="age1">19 + </label>
     <br />
     <br />
+    <!--This is a telephone input. type="tel", name and id are all required.
+    minlength and maxlength can be good attributes to use for some basic arro checking.-->
+    <label for="telephone">Please enter your telephone number:</label>
+    <input type="tel" name="UserTel" id="telephone" minlength="14" maxlength="22" />
 
+    <!--This is a checkbox input. Note: this is an input where the input typically comes before the label. 
+    
+    type= "checkbox", name, and id are all required. Value is also required.
+    The value is also required and provides its value to the server if the user checks that box and submits the form.
+    In this case, what would be passed to the server is waterBottle=bottle -->
     <input type="checkbox" id="agreement" name="agreement" value="Agreed" required>
     <label for="agreement">I have agreed to the Terms and Conditions</label>
     <br />
