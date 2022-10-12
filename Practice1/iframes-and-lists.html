@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFrames and Lists</title>
-</head>
-<body>
-   <h1>Iframes Tables and Lists</h1>
+  </head>
+  <body>
+    <header>
+      <h1>Iframes Tables and Lists</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li>
+            <a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
+          </li>
+          <li><a href="links-and-images.html">Links and Images</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li>
+            <a href="iframes-and-lists.html">Iframes, Tables, and Lists</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-   <!--This is an iframe tag, which allows web developers to include web content from other
-websites into their own website. src is the location of the web content you want to include
-width and height define the size of the Iframe. framebordes take a value of 0 (off) and 1 (on)
-to turn off or on the border around IFrame. -->
-<a href="https://www.youtube.com/watch?v=mU6anWqZJcc" target = "_blank">Click this to view the embedded YouTube video featured below about HTML on YouTube</a>
-<br />
-<br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mU6anWqZJcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br />
-<br />
-<a href="index.html">Home Page</a>
-<br />
-<br />
-<a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
-<br />
-<br />
-<a href="links-and-images.html">Links and Images</a>
-<br />
-<br />
-<!--Unordered lists--> 
-<ul type="square">
-    <li><b>Movies</b></li>
-    <li>Games</li>
-    <ul>
-        <li>Board-Games</li>
-        <li>Video-Games</li>
-    </ul>
-    <li>Books</li>
-</ul>
-<br />
-<br />
-<ol type="square" start="10" reversed>
-    <li><b>Stamps</b></li>
-    <li>Coins</li>
-    <ol type="a">
-        <li>Squared coins</li>
-        <li>Wavy-edged coins</li>
-        <li>Coins with holes</li>
-    </ol>
-    <li>Banknotes</li>
-    <ol type="I">
-        <li>Australian Banknotes</li>
-        <li>Canadian Banknotes</li>
-        <li>New Zealand Banknotes</li>
-        <li>British Banknotes</li>
-    </ol>
-</ol>
-<br />
-<br />
-<dl>
-    <dt>Chips</dt>
-    <dd>A-crunchy-potato-snack</dd>
-    <dt>Mashed Potato</dt>
-    <dd>A-mashed-potato-food</dd>
-</dl>
-<iframe src="https://en.wikipedia.org/" width="50%" height="600px" frameborder="0" title="This is an Iframe that display the English Home Page for Wikipedia"></iframe>
+    <main>
+      <!--This is an iframe tag, which allows web developers to include web content from other
+        websites into their own website. src is the location of the web content you want to include
+        width and height define the size of the Iframe. framebordes take a value of 0 (off) and 1 (on)
+        to turn off or on the border around IFrame. -->
+      <a href="https://www.youtube.com/watch?v=mU6anWqZJcc" target="_blank">
+        Click this to view the embedded YouTube video featured below about HTML
+        on YouTube</a
+      >
+      <br />
+      <br />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/mU6anWqZJcc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      <!--Unordered lists-->
+      <ul type="square">
+        <li><b>Movies</b></li>
+        <li>Games</li>
+        <ul>
+          <li>Board-Games</li>
+          <li>Video-Games</li>
+        </ul>
+        <li>Books</li>
+      </ul>
+      <br />
+      <br />
+      <ol type="square" start="10" reversed>
+        <li><b>Stamps</b></li>
+        <li>Coins</li>
+        <ol type="a">
+          <li>Squared coins</li>
+          <li>Wavy-edged coins</li>
+          <li>Coins with holes</li>
+        </ol>
+        <li>Banknotes</li>
+        <ol type="I">
+          <li>Australian Banknotes</li>
+          <li>Canadian Banknotes</li>
+          <li>New Zealand Banknotes</li>
+          <li>British Banknotes</li>
+        </ol>
+      </ol>
+      <br />
+      <br />
+      <dl>
+        <dt>Chips</dt>
+        <dd>A-crunchy-potato-snack</dd>
+        <dt>Mashed Potato</dt>
+        <dd>A-mashed-potato-food</dd>
+      </dl>
+      <iframe
+        src="https://en.wikipedia.org/"
+        width="50%"
+        height="600px"
+        frameborder="0"
+        title="This is an Iframe that display the English Home Page for Wikipedia">
+      </iframe>
 
-<!--This is an HTML table. It starts with the <table> tag. -->
-<table>
-    <!--After the table tag, you create table rows with the <tr> tag.-->
-    <tr>
-        <!--Inside the very first table row, should be your table headings (th tags).
+      <!--This is an HTML table. It starts with the <table> tag. -->
+      <table>
+        <!--After the table tag, you create table rows with the <tr> tag.-->
+        <tr>
+          <!--Inside the very first table row, should be your table headings (th tags).
         $nbsp; is an entity. Entities are used to display special charcaters on a website.
         Entities can use names like &nbsp;; or numbers, like &#169; (the copyright symbol).-->
-        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teacher Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course Taught&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;School They Teach From&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    </tr>
-    <!--Then, you create as many table rows of data as you wish.-->
-    <tr>
-        <!--Inside each table row after the heading, ypou add table data <td> tags
+          <th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teacher
+            Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </th>
+          <th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course
+            Taught&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </th>
+          <th>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;School They Teach
+            From&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </th>
+        </tr>
+        <!--Then, you create as many table rows of data as you wish.-->
+        <tr>
+          <!--Inside each table row after the heading, ypou add table data <td> tags
             to thw row-->
-        <td>Mr. Hardman</td>
-        <td>Web Dev</td>
-        <td>PTEC</td>
-    </tr>
-    <tr>
-        <td>Mr. Peers</td>
-        <td>E.L.A.</td>
-        <td>PTEC</td>
-    </tr>
-    <tr>
-        <td>Mr. Zielke</td>
-        <td>E.L.A</td>
-        <td>Shaftesbury</td>
-    </tr>
-</table>
-<p>&#169; Daria</p>
-</body>
+          <td>Mr. Hardman</td>
+          <td>Web Dev</td>
+          <td>PTEC</td>
+        </tr>
+        <tr>
+          <td>Mr. Peers</td>
+          <td>E.L.A.</td>
+          <td>PTEC</td>
+        </tr>
+        <tr>
+          <td>Mr. Zielke</td>
+          <td>E.L.A</td>
+          <td>Shaftesbury</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <p>&#169; 2022 Daria</p>
+    </footer>
+  </body>
 </html>
